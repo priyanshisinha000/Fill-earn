@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TM36CMTX');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fill N Earn – Get Paid for Your Opinion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; }
+    .font-display { font-family: 'Syne', sans-serif; }
+    .page { display: none; }
+    .page.active { display: block; }
+    .survey-modal { display: none; }
+    .survey-modal.open { display: flex; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+    .animate-in { animation: fadeIn 0.4s ease forwards; }
+    @keyframes pop { 0%{transform:scale(0.8);opacity:0} 70%{transform:scale(1.05)} 100%{transform:scale(1);opacity:1} }
+    .animate-pop { animation: pop 0.5s ease forwards; }
+    html { scroll-behavior: smooth; }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#1a6b3c', light: '#e8f5ee', dark: '#0f4c2a' },
+            accent: { DEFAULT: '#f5a623', light: '#fff8eb' },
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM36CMTX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ============================================================
+     PAGE 1: LANDING PAGE
+============================================================ -->
+<div id="page-landing" class="page active">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="font-display text-2xl font-extrabold text-primary">Fill <span class="text-accent">N</span> Earn</div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#surveys" class="text-gray-500 hover:text-primary text-sm font-medium transition-colors">Surveys</a>
+        <a href="#earnings" class="text-gray-500 hover:text-primary text-sm font-medium transition-colors">Earnings</a>
+        <a href="#faq" class="text-gray-500 hover:text-primary text-sm font-medium transition-colors">FAQ</a>
+      </div>
+      <button onclick="showSignup('navbar')" class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors">Sign Up Free</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-[#0f4c2a] via-[#1a6b3c] to-[#22863a] py-20 px-4 text-center relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-72 h-72 rounded-full bg-accent opacity-10 -translate-y-1/2 translate-x-1/4"></div>
+    <div class="absolute bottom-0 left-0 w-56 h-56 rounded-full bg-white opacity-5 translate-y-1/2 -translate-x-1/4"></div>
+    <div class="relative z-10 max-w-2xl mx-auto animate-in">
+      <span class="inline-block bg-accent/20 text-yellow-300 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-5">★ India's #1 Survey Platform</span>
+      <h1 class="font-display text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">Fill Surveys.<br/><span class="text-yellow-300">Earn Real Money.</span></h1>
+      <p class="text-white/70 text-base max-w-md mx-auto mb-8 leading-relaxed">Complete simple survey forms from home and get paid instantly to your UPI. No skills required — just your honest opinion!</p>
+      <div class="flex justify-center gap-10 mb-10">
+        <div class="text-center"><div class="font-display text-2xl font-bold text-yellow-300">2.4L+</div><div class="text-white/60 text-xs mt-1">Active Users</div></div>
+        <div class="text-center"><div class="font-display text-2xl font-bold text-yellow-300">₹85L+</div><div class="text-white/60 text-xs mt-1">Paid Out</div></div>
+        <div class="text-center"><div class="font-display text-2xl font-bold text-yellow-300">500+</div><div class="text-white/60 text-xs mt-1">Live Surveys</div></div>
+      </div>
+      <button onclick="showSignup('hero')" class="bg-accent hover:bg-orange-500 text-white font-bold px-10 py-4 rounded-xl text-base shadow-lg shadow-orange-500/30 transition-all hover:scale-105">Start Earning Today →</button>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-16 px-4 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center mb-10">
+      <h2 class="font-display text-2xl font-bold mb-2">How It Works</h2>
+      <p class="text-gray-500 text-sm">Three simple steps to start earning</p>
+    </div>
+    <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center hover:shadow-md transition-shadow">
+        <div class="w-11 h-11 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-3 text-xl">📝</div>
+        <h3 class="font-display font-bold text-sm mb-1">Register Free</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">Create your account in under 60 seconds.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center hover:shadow-md transition-shadow">
+        <div class="w-11 h-11 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-3 text-xl">✅</div>
+        <h3 class="font-display font-bold text-sm mb-1">Pick a Survey</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">Browse and choose surveys that match you.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center hover:shadow-md transition-shadow">
+        <div class="w-11 h-11 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-3 text-xl">💰</div>
+        <h3 class="font-display font-bold text-sm mb-1">Get Paid</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">Earnings hit your UPI wallet instantly.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center hover:shadow-md transition-shadow">
+        <div class="w-11 h-11 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-3 text-xl">🎁</div>
+        <h3 class="font-display font-bold text-sm mb-1">Refer &amp; Earn</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">Invite friends, earn ₹5 per referral.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SURVEYS SECTION -->
+  <section id="surveys" class="py-16 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-4">
+        <div>
+          <h2 class="font-display text-2xl font-bold">Available Surveys</h2>
+          <p class="text-gray-400 text-sm mt-1">Click any survey to start earning</p>
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <button onclick="filterSurveys('all',this)" class="filter-tab active-tab px-4 py-1.5 rounded-full text-xs font-semibold border border-primary bg-primary text-white transition-all">All</button>
+          <button onclick="filterSurveys('quick',this)" class="filter-tab px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-300 text-gray-500 hover:border-primary hover:text-primary transition-all">Quick (5 min)</button>
+          <button onclick="filterSurveys('top',this)" class="filter-tab px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-300 text-gray-500 hover:border-primary hover:text-primary transition-all">Top Paying</button>
+        </div>
+      </div>
+      <div id="surveyGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- EARNINGS SECTION -->
+  <section id="earnings" class="py-16 px-4 bg-gradient-to-br from-accent to-orange-500 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-2xl font-bold text-white mb-2">Your Earning Potential</h2>
+      <p class="text-white/80 text-sm mb-8">The more questions you answer, the more you earn</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div class="bg-white/15 border border-white/25 rounded-2xl p-4 text-center">
+          <div class="font-display text-2xl font-extrabold text-white">₹1.50</div>
+          <div class="text-white/75 text-xs mt-1">Short (3–5 Qs)</div>
+        </div>
+        <div class="bg-white/15 border border-white/25 rounded-2xl p-4 text-center">
+          <div class="font-display text-2xl font-extrabold text-white">₹2.50</div>
+          <div class="text-white/75 text-xs mt-1">Standard (6–10 Qs)</div>
+        </div>
+        <div class="bg-white/15 border border-white/25 rounded-2xl p-4 text-center">
+          <div class="font-display text-2xl font-extrabold text-white">₹4.00</div>
+          <div class="text-white/75 text-xs mt-1">Detailed (11–15 Qs)</div>
+        </div>
+        <div class="bg-white/15 border border-white/25 rounded-2xl p-4 text-center">
+          <div class="font-display text-2xl font-extrabold text-white">₹5.00+</div>
+          <div class="text-white/75 text-xs mt-1">Premium (15+ Qs)</div>
+        </div>
+      </div>
+      <button onclick="showSignup('earnings')" class="bg-white text-accent font-bold px-10 py-4 rounded-xl text-base hover:bg-gray-100 transition-colors shadow-lg">Join Now & Start Earning →</button>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-16 px-4 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center mb-10">
+      <h2 class="font-display text-2xl font-bold mb-2">What Our Users Say</h2>
+      <p class="text-gray-500 text-sm">Real people earning real money every day</p>
+    </div>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 hover:shadow-md transition-shadow">
+        <div class="text-accent text-sm mb-3">★★★★★</div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">"I earned ₹120 in my first week just filling surveys during lunch. UPI payout is instant!"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold">PR</div>
+          <div><div class="font-semibold text-sm">Priya R.</div><div class="text-gray-400 text-xs">Jaipur, Rajasthan</div></div>
+        </div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 hover:shadow-md transition-shadow">
+        <div class="text-accent text-sm mb-3">★★★★★</div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">"Best platform for students! I complete 5–6 surveys daily between classes. Amazing pocket money."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-white text-xs font-bold">AK</div>
+          <div><div class="font-semibold text-sm">Arjun K.</div><div class="text-gray-400 text-xs">Pune, Maharashtra</div></div>
+        </div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 hover:shadow-md transition-shadow">
+        <div class="text-accent text-sm mb-3">★★★★☆</div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">"Referred 10 friends and earned ₹50 extra! The referral bonus is a great add-on."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-violet-500 flex items-center justify-center text-white text-xs font-bold">SM</div>
+          <div><div class="font-semibold text-sm">Sunita M.</div><div class="text-gray-400 text-xs">Lucknow, UP</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 px-4 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="font-display text-2xl font-bold mb-2">Frequently Asked Questions</h2>
+        <p class="text-gray-500 text-sm">Everything you need to know</p>
+      </div>
+      <div class="space-y-3" id="faqContainer"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="font-display text-lg font-bold text-white">Fill <span class="text-accent">N</span> Earn</div>
+      <p class="text-xs text-center">© 2025 Fill N Earn. All rights reserved. Dummy site for Google Ads practice.</p>
+      <div class="flex gap-5 text-xs">
+        <a href="#" onclick="showPage('page-privacy')" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" onclick="showPage('page-terms')" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" onclick="showPage('page-contact')" class="hover:text-white transition-colors">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</div><!-- end page-landing -->
+
+
+<!-- ============================================================
+     PAGE 2: SIGN UP FORM
+============================================================ -->
+<div id="page-signup" class="page">
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <button onclick="showPage('page-landing')" class="font-display text-2xl font-extrabold text-primary">Fill <span class="text-accent">N</span> Earn</button>
+      <button onclick="showPage('page-landing')" class="text-gray-400 hover:text-gray-700 text-sm">← Back to Home</button>
+    </div>
+  </nav>
+  <div class="min-h-screen bg-gradient-to-br from-primary-light via-white to-accent-light flex items-center justify-center px-4 py-16">
+    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 w-full max-w-md p-8 animate-in">
+      <div class="text-center mb-8">
+        <div class="text-4xl mb-3">🎉</div>
+        <h2 class="font-display text-2xl font-extrabold text-gray-900 mb-1">Create Free Account</h2>
+        <p class="text-gray-400 text-sm">Join <span class="text-primary font-semibold">2,40,000+</span> users already earning daily</p>
+      </div>
+      <div id="signupSource" class="bg-primary-light text-primary text-xs font-semibold text-center py-2 px-4 rounded-xl mb-6 hidden"></div>
+      <form onsubmit="handleSubmit(event)" class="space-y-4">
+        <div>
+          <label class="text-xs font-semibold text-gray-600 mb-1 block">Full Name *</label>
+          <input type="text" id="field-name" required placeholder="e.g. Rahul Sharma" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"/>
+        </div>
+        <div>
+          <label class="text-xs font-semibold text-gray-600 mb-1 block">Email Address *</label>
+          <input type="email" id="field-email" required placeholder="you@example.com" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"/>
+        </div>
+        <div>
+          <label class="text-xs font-semibold text-gray-600 mb-1 block">Phone Number *</label>
+          <input type="tel" id="field-phone" required placeholder="+91 98765 43210" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"/>
+        </div>
+        <div>
+          <label class="text-xs font-semibold text-gray-600 mb-1 block">State</label>
+          <select id="field-state" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition text-gray-600">
+            <option value="">Select your state</option>
+            <option>Uttar Pradesh</option><option>Maharashtra</option><option>Delhi</option>
+            <option>Rajasthan</option><option>Karnataka</option><option>Tamil Nadu</option>
+            <option>West Bengal</option><option>Gujarat</option><option>Other</option>
+          </select>
+        </div>
+        <label class="flex items-start gap-3 cursor-pointer mt-2">
+          <input type="checkbox" required class="mt-1 accent-primary"/>
+          <span class="text-xs text-gray-400 leading-relaxed">I agree to the <a href="#" class="text-primary underline">Terms of Service</a> and <a href="#" class="text-primary underline">Privacy Policy</a></span>
+        </label>
+        <button type="submit" id="conversion-button" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-xl text-base transition-all hover:scale-[1.02] shadow-lg shadow-primary/20 mt-2">
+          🚀 Create My Free Account
+        </button>
+      </form>
+      <p class="text-center text-xs text-gray-400 mt-5">No credit card required. 100% free forever.</p>
+    </div>
+  </div>
+  <footer class="bg-gray-900 text-gray-400 py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-xs">© 2025 Fill N Earn. All rights reserved.</p>
+      <div class="flex gap-5 text-xs">
+        <a href="#" onclick="showPage('page-privacy')" class="hover:text-white">Privacy Policy</a>
+        <a href="#" onclick="showPage('page-terms')" class="hover:text-white">Terms of Service</a>
+        <a href="#" onclick="showPage('page-contact')" class="hover:text-white">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</div><!-- end page-signup -->
+
+
+<!-- ============================================================
+     PAGE 3: THANK YOU
+============================================================ -->
+<div id="page-thankyou" class="page">
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center">
+      <div class="font-display text-2xl font-extrabold text-primary">Fill <span class="text-accent">N</span> Earn</div>
+    </div>
+  </nav>
+  <div class="min-h-screen bg-gradient-to-br from-primary-light via-white to-accent-light flex items-center justify-center px-4 py-16">
+    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 w-full max-w-lg p-10 text-center animate-pop">
+      <div class="text-6xl mb-5">🎊</div>
+      <h1 id="thank-you-message" class="font-display text-3xl font-extrabold text-gray-900 mb-3">You're All Set!</h1>
+      <p class="text-gray-500 text-base leading-relaxed mb-2">Welcome to <span class="text-primary font-semibold">Fill N Earn</span>! Your account has been created successfully.</p>
+      <p class="text-gray-400 text-sm mb-8">Check your email for a confirmation link. Your first survey is waiting for you!</p>
+      <div class="bg-primary-light rounded-2xl p-5 mb-8 text-left">
+        <div class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Your Account Summary</div>
+        <div class="flex justify-between text-sm py-1.5 border-b border-green-100"><span class="text-gray-400">Name</span><span class="font-semibold" id="summary-name">—</span></div>
+        <div class="flex justify-between text-sm py-1.5 border-b border-green-100"><span class="text-gray-400">Email</span><span class="font-semibold" id="summary-email">—</span></div>
+        <div class="flex justify-between text-sm py-1.5"><span class="text-gray-400">Bonus Balance</span><span class="font-bold text-primary">₹10.00 (Welcome Bonus!)</span></div>
+      </div>
+      <button onclick="showPage('page-landing')" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-xl text-base transition-all hover:scale-[1.02] shadow-lg shadow-primary/20">
+        Browse Surveys & Start Earning →
+      </button>
+      <p class="text-xs text-gray-400 mt-4">Surveys refresh every 24 hours. Log in daily for new opportunities!</p>
+    </div>
+  </div>
+  <footer class="bg-gray-900 text-gray-400 py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-xs">© 2025 Fill N Earn. All rights reserved.</p>
+      <div class="flex gap-5 text-xs">
+        <a href="#" onclick="showPage('page-privacy')" class="hover:text-white">Privacy Policy</a>
+        <a href="#" onclick="showPage('page-terms')" class="hover:text-white">Terms of Service</a>
+        <a href="#" onclick="showPage('page-contact')" class="hover:text-white">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</div><!-- end page-thankyou -->
+
+
+<!-- ============================================================
+     PAGE 4: PRIVACY POLICY
+============================================================ -->
+<div id="page-privacy" class="page">
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <button onclick="showPage('page-landing')" class="font-display text-2xl font-extrabold text-primary">Fill <span class="text-accent">N</span> Earn</button>
+      <button onclick="showPage('page-landing')" class="text-gray-400 hover:text-gray-700 text-sm">← Back to Home</button>
+    </div>
+  </nav>
+  <div class="max-w-2xl mx-auto px-4 py-16 animate-in">
+    <h1 class="font-display text-3xl font-extrabold mb-2">Privacy Policy</h1>
+    <p class="text-gray-400 text-sm mb-8">Last updated: June 1, 2025</p>
+    <div class="prose text-gray-600 text-sm leading-relaxed space-y-5">
+      <p>Fill N Earn ("we", "our", "us") is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our platform.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Information We Collect</h2>
+      <p>We collect information you provide directly to us, such as your name, email address, phone number, and state of residence when you register for an account. We also collect survey response data and usage data such as pages visited and time spent on the platform.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">How We Use Your Information</h2>
+      <p>Your information is used to create and manage your account, send you relevant surveys, process your earnings and UPI payouts, improve our platform, and send promotional communications (you may opt out at any time).</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Data Sharing</h2>
+      <p>We do not sell your personal data to third parties. Survey response data may be shared with our research clients in anonymized and aggregated form only.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Cookies</h2>
+      <p>We use cookies to keep you logged in and to understand how our platform is used. You can disable cookies in your browser settings at any time.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Contact</h2>
+      <p>For privacy-related questions, please email us at privacy@fillnearn.in</p>
+    </div>
+  </div>
+  <footer class="bg-gray-900 text-gray-400 py-6 px-4 mt-10">
+    <div class="max-w-5xl mx-auto text-center text-xs">© 2025 Fill N Earn. All rights reserved. | <a href="#" onclick="showPage('page-landing')" class="hover:text-white">Home</a></div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     PAGE 5: TERMS OF SERVICE
+============================================================ -->
+<div id="page-terms" class="page">
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <button onclick="showPage('page-landing')" class="font-display text-2xl font-extrabold text-primary">Fill <span class="text-accent">N</span> Earn</button>
+      <button onclick="showPage('page-landing')" class="text-gray-400 hover:text-gray-700 text-sm">← Back to Home</button>
+    </div>
+  </nav>
+  <div class="max-w-2xl mx-auto px-4 py-16 animate-in">
+    <h1 class="font-display text-3xl font-extrabold mb-2">Terms of Service</h1>
+    <p class="text-gray-400 text-sm mb-8">Last updated: June 1, 2025</p>
+    <div class="text-gray-600 text-sm leading-relaxed space-y-5">
+      <p>By using Fill N Earn, you agree to these Terms of Service. Please read them carefully.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Eligibility</h2>
+      <p>You must be at least 18 years old and a resident of India to use this platform. One account per person is permitted.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Earning Rules</h2>
+      <p>Earnings are credited only for fully completed surveys. Incomplete surveys will not be rewarded. Minimum withdrawal amount is ₹50. Payouts are processed within 24–48 hours to your registered UPI ID.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Prohibited Conduct</h2>
+      <p>You must not create multiple accounts, submit false or inconsistent responses, use bots or automated tools, or attempt to manipulate the platform in any way. Violations will result in immediate account termination and forfeiture of earnings.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Termination</h2>
+      <p>We reserve the right to terminate accounts that violate these terms without prior notice. All unpaid earnings will be forfeited upon termination due to policy violations.</p>
+      <h2 class="font-display font-bold text-gray-800 text-lg">Limitation of Liability</h2>
+      <p>Fill N Earn is not liable for any indirect or consequential damages arising from the use of this platform. This is a dummy website created for Google Ads practice purposes.</p>
+    </div>
+  </div>
+  <footer class="bg-gray-900 text-gray-400 py-6 px-4 mt-10">
+    <div class="max-w-5xl mx-auto text-center text-xs">© 2025 Fill N Earn. All rights reserved. | <a href="#" onclick="showPage('page-landing')" class="hover:text-white">Home</a></div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     PAGE 6: CONTACT US
+============================================================ -->
+<div id="page-contact" class="page">
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <button onclick="showPage('page-landing')" class="font-display text-2xl font-extrabold text-primary">Fill <span class="text-accent">N</span> Earn</button>
+      <button onclick="showPage('page-landing')" class="text-gray-400 hover:text-gray-700 text-sm">← Back to Home</button>
+    </div>
+  </nav>
+  <div class="max-w-xl mx-auto px-4 py-16 animate-in">
+    <div class="text-center mb-10">
+      <h1 class="font-display text-3xl font-extrabold mb-2">Contact Us</h1>
+      <p class="text-gray-400 text-sm">We're here to help. Reach out anytime!</p>
+    </div>
+    <div class="grid grid-cols-1 gap-4 mb-10">
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 flex items-center gap-4">
+        <div class="text-2xl">📧</div>
+        <div><div class="font-semibold text-sm">Email Support</div><div class="text-gray-400 text-sm">support@fillnearn.in</div></div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 flex items-center gap-4">
+        <div class="text-2xl">📞</div>
+        <div><div class="font-semibold text-sm">Phone (Mon–Sat, 10am–6pm)</div><div class="text-gray-400 text-sm">+91 98765 43210</div></div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-5 flex items-center gap-4">
+        <div class="text-2xl">📍</div>
+        <div><div class="font-semibold text-sm">Office</div><div class="text-gray-400 text-sm">123 Survey Tower, Sector 5, Noida, UP 201301</div></div>
+      </div>
+    </div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6">
+      <h2 class="font-display font-bold text-base mb-4">Send a Message</h2>
+      <div class="space-y-3">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary transition"/>
+        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary transition"/>
+        <textarea rows="4" placeholder="Your message..." class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary transition resize-none"></textarea>
+        <button onclick="alert('Message sent! (Dummy form – for practice only)')" class="w-full bg-primary text-white font-bold py-3 rounded-xl text-sm hover:bg-primary-dark transition-colors">Send Message</button>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-gray-900 text-gray-400 py-6 px-4 mt-10">
+    <div class="max-w-5xl mx-auto text-center text-xs">© 2025 Fill N Earn. All rights reserved. | <a href="#" onclick="showPage('page-landing')" class="hover:text-white">Home</a></div>
+  </footer>
+</div>
+
+
+<!-- ============================================================
+     SURVEY MODAL (DUMMY FORM)
+============================================================ -->
+<div id="surveyModal" class="survey-modal fixed inset-0 bg-black/60 z-50 items-center justify-center px-4 py-8">
+  <div class="bg-white rounded-3xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto animate-in">
+    <div class="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between rounded-t-3xl z-10">
+      <div>
+        <div class="font-display font-bold text-base" id="modal-title">Survey Title</div>
+        <div class="text-xs text-gray-400 mt-0.5" id="modal-meta">7 Questions · ₹2.50</div>
+      </div>
+      <button onclick="closeModal()" class="text-gray-400 hover:text-gray-700 text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition">✕</button>
+    </div>
+    <div class="px-6 py-6" id="modal-body"></div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script>
+  // ---- Survey Data ----
+  const surveys = [
+    {id:1, icon:"🛒", color:"#e8f5ee", title:"Online Shopping Habits Survey", questions:8, time:"6 min", category:"Lifestyle", earn:2.50, difficulty:"medium",
+      form:[
+        {q:"How often do you shop online?", type:"radio", options:["Daily","2–3 times a week","Once a week","Once a month","Rarely"]},
+        {q:"Which platform do you use most for online shopping?", type:"radio", options:["Amazon","Flipkart","Meesho","Myntra","Other"]},
+        {q:"What is your average monthly spend on online shopping (₹)?", type:"radio", options:["Under ₹500","₹500–₹2000","₹2000–₹5000","Above ₹5000"]},
+        {q:"Which product category do you buy most online?", type:"radio", options:["Clothing & Footwear","Electronics","Groceries","Books","Beauty & Personal Care"]},
+        {q:"How satisfied are you with online shopping delivery speed?", type:"radio", options:["Very Satisfied","Satisfied","Neutral","Dissatisfied","Very Dissatisfied"]},
+        {q:"Do you read product reviews before purchasing?", type:"radio", options:["Always","Usually","Sometimes","Rarely","Never"]},
+        {q:"What is your preferred payment method online?", type:"radio", options:["UPI","Debit/Credit Card","Net Banking","Cash on Delivery","Wallets (Paytm etc.)"]},
+        {q:"Would you recommend online shopping to a friend?", type:"radio", options:["Definitely Yes","Probably Yes","Not Sure","Probably No","Definitely No"]},
+      ]
+    },
+    {id:2, icon:"🍔", color:"#fff8eb", title:"Food Delivery App Experience", questions:6, time:"4 min", category:"Food & Bev", earn:1.50, difficulty:"easy",
+      form:[
+        {q:"Which food delivery app do you use most?", type:"radio", options:["Zomato","Swiggy","Magicpin","Dunzo","I don't use food apps"]},
+        {q:"How many times a week do you order food online?", type:"radio", options:["Every day","4–6 times","2–3 times","Once a week","Rarely"]},
+        {q:"What is your typical order value (₹)?", type:"radio", options:["Under ₹100","₹100–₹300","₹300–₹600","Above ₹600"]},
+        {q:"How important are discounts/offers when ordering?", type:"radio", options:["Very Important","Important","Somewhat Important","Not Important"]},
+        {q:"Rate the accuracy of food delivered vs what was shown in the app:", type:"radio", options:["Always Accurate","Usually Accurate","Sometimes Inaccurate","Often Wrong"]},
+        {q:"Have you ever complained about a food delivery? If yes, was the issue resolved?", type:"radio", options:["Yes, resolved quickly","Yes, but not resolved","No, never complained","I prefer not to complain"]},
+      ]
+    },
+    {id:3, icon:"📱", color:"#eff6ff", title:"Smartphone Usage Patterns", questions:5, time:"3 min", category:"Technology", earn:1.50, difficulty:"easy",
+      form:[
+        {q:"Which smartphone brand do you currently use?", type:"radio", options:["Samsung","Apple","Xiaomi / Redmi","Realme / OPPO","Vivo","Other"]},
+        {q:"How many hours per day do you use your smartphone?", type:"radio", options:["Less than 2 hrs","2–4 hrs","4–6 hrs","6–8 hrs","More than 8 hrs"]},
+        {q:"What do you use your phone for most?", type:"radio", options:["Social Media","Work / Emails","Entertainment (Videos)","Online Shopping","Gaming"]},
+        {q:"How often do you upgrade your smartphone?", type:"radio", options:["Every year","Every 2 years","Every 3+ years","Only when it breaks"]},
+        {q:"Would you switch to a different brand on your next purchase?", type:"radio", options:["Yes, definitely","Maybe","No, I'm loyal to my brand","Not sure yet"]},
+      ]
+    },
+    {id:4, icon:"🏥", color:"#fef2f2", title:"Healthcare Awareness Questionnaire", questions:7, time:"6 min", category:"Health", earn:2.50, difficulty:"medium",
+      form:[
+        {q:"How often do you visit a doctor for a routine health checkup?", type:"radio", options:["Every 6 months","Once a year","Only when sick","Rarely / Never"]},
+        {q:"Do you have health insurance?", type:"radio", options:["Yes, employer-provided","Yes, self-purchased","No, but planning to buy","No health insurance"]},
+        {q:"How do you primarily access healthcare?", type:"radio", options:["Government hospital","Private clinic","Online consultation apps","Home remedies only"]},
+        {q:"Have you used any online doctor consultation app (e.g., Practo)?", type:"radio", options:["Yes, regularly","Yes, once or twice","No, but I'm interested","No, I prefer in-person"]},
+        {q:"How would you rate the quality of healthcare in your city?", type:"radio", options:["Excellent","Good","Average","Poor","Very Poor"]},
+        {q:"Do you follow any regular fitness or wellness routine?", type:"radio", options:["Daily exercise","Yoga / Meditation","Occasional walks","No routine currently"]},
+        {q:"What is your biggest barrier to accessing good healthcare?", type:"radio", options:["High cost","Distance from facility","Lack of awareness","Long waiting times","None — I have good access"]},
+      ]
+    },
+    {id:5, icon:"🎓", color:"#f5f3ff", title:"Online Education Feedback Form", questions:6, time:"5 min", category:"Education", earn:1.50, difficulty:"easy",
+      form:[
+        {q:"Have you taken any online course in the past year?", type:"radio", options:["Yes, multiple courses","Yes, one course","No, but I'm interested","No, prefer offline learning"]},
+        {q:"Which online learning platform have you used?", type:"radio", options:["Coursera","Udemy","YouTube","Unacademy / Byju's","Other / None"]},
+        {q:"What subjects interest you for online learning?", type:"radio", options:["Technology & Coding","Finance & Investing","Marketing & Business","Arts & Design","Languages"]},
+        {q:"How much are you willing to pay per month for an online course (₹)?", type:"radio", options:["Nothing (free only)","Under ₹200","₹200–₹500","₹500–₹1000","Above ₹1000"]},
+        {q:"What motivates you to learn online?", type:"radio", options:["Career advancement","Personal interest","Earning a certificate","Skill for freelancing","College / exam prep"]},
+        {q:"Overall, how effective do you find online learning compared to offline?", type:"radio", options:["Much more effective","Slightly more effective","About the same","Less effective","Much less effective"]},
+      ]
+    },
+    {id:6, icon:"💳", color:"#ecfdf5", title:"Digital Payment Preferences", questions:6, time:"4 min", category:"Finance", earn:1.50, difficulty:"easy",
+      form:[
+        {q:"Which digital payment method do you use most?", type:"radio", options:["UPI (GPay, PhonePe etc.)","Credit Card","Debit Card","Net Banking","Mobile Wallets"]},
+        {q:"How many digital transactions do you make per week?", type:"radio", options:["10+","5–9","2–4","1","I mostly use cash"]},
+        {q:"How concerned are you about digital payment fraud?", type:"radio", options:["Very concerned","Somewhat concerned","Neutral","Not very concerned","Not concerned at all"]},
+        {q:"Have you ever experienced a failed or fraudulent digital transaction?", type:"radio", options:["Yes, multiple times","Yes, once","No, never","I'm not sure"]},
+        {q:"Do you use a dedicated budget/finance tracking app?", type:"radio", options:["Yes, regularly","Yes, occasionally","No, but interested","No, don't see the need"]},
+        {q:"How satisfied are you with the UPI payment experience in India?", type:"radio", options:["Very Satisfied","Satisfied","Neutral","Dissatisfied","Very Dissatisfied"]},
+      ]
+    },
+    {id:7, icon:"📺", color:"#eff6ff", title:"OTT Platform Satisfaction Survey", questions:7, time:"5 min", category:"Entertainment", earn:2.50, difficulty:"medium",
+      form:[
+        {q:"Which OTT platform do you subscribe to?", type:"radio", options:["Netflix","Amazon Prime","Disney+ Hotstar","JioCinema","SonyLIV","I don't subscribe to any"]},
+        {q:"How many hours per day do you watch OTT content?", type:"radio", options:["Less than 1 hr","1–2 hrs","2–4 hrs","4+ hrs"]},
+        {q:"What type of content do you watch most?", type:"radio", options:["Hindi Web Series","Hollywood Movies","Bollywood Movies","Reality Shows","Sports","Documentaries"]},
+        {q:"How important is content variety when choosing an OTT platform?", type:"radio", options:["Very Important","Important","Somewhat Important","Not Important"]},
+        {q:"How much do you pay for OTT subscriptions per month (₹)?", type:"radio", options:["Nothing (free plan)","Under ₹200","₹200–₹500","Above ₹500"]},
+        {q:"How often do you share your OTT account with others?", type:"radio", options:["Always","Sometimes","Rarely","Never — I have my own"]},
+        {q:"How satisfied are you with the content quality on your primary OTT platform?", type:"radio", options:["Very Satisfied","Satisfied","Neutral","Dissatisfied","Very Dissatisfied"]},
+      ]
+    },
+    {id:8, icon:"💪", color:"#fef9c3", title:"Fitness & Wellness Habits Study", questions:8, time:"6 min", category:"Health", earn:2.50, difficulty:"medium",
+      form:[
+        {q:"How many days a week do you exercise?", type:"radio", options:["Every day (7)","5–6 days","3–4 days","1–2 days","I don't exercise regularly"]},
+        {q:"What type of exercise do you prefer?", type:"radio", options:["Gym / Weight Training","Yoga","Running / Walking","Sports","Home Workouts","I don't exercise"]},
+        {q:"Do you follow a specific diet plan?", type:"radio", options:["Yes, strictly","Yes, loosely","No, but I try to eat healthy","No diet plan at all"]},
+        {q:"How many glasses of water do you drink daily?", type:"radio", options:["8+ glasses","5–7 glasses","3–4 glasses","Less than 3 glasses"]},
+        {q:"Do you use any fitness tracking app or device?", type:"radio", options:["Yes, smartwatch","Yes, mobile app only","No, but interested","No, don't need one"]},
+        {q:"How would you rate your current mental health?", type:"radio", options:["Excellent","Good","Average","Below Average","Poor"]},
+        {q:"Do you practice any form of meditation or mindfulness?", type:"radio", options:["Daily","A few times a week","Occasionally","Never"]},
+        {q:"What is your biggest challenge in maintaining fitness?", type:"radio", options:["Lack of time","Lack of motivation","No gym nearby","Cost","Health issues"]},
+      ]
+    },
+  ];
+
+  const diffLabel = {easy:'Easy',medium:'Medium',hard:'Detailed'};
+  const diffColors = {easy:'bg-green-100 text-green-700', medium:'bg-yellow-100 text-yellow-700', hard:'bg-red-100 text-red-700'};
+
+  // ---- Render Surveys ----
+  function renderSurveys(list) {
+    const grid = document.getElementById('surveyGrid');
+    grid.innerHTML = '';
+    list.forEach(s => {
+      const card = document.createElement('div');
+      card.className = 'border border-gray-200 rounded-2xl p-5 bg-white hover:border-primary hover:shadow-lg transition-all cursor-pointer group';
+      card.onclick = () => openSurveyModal(s);
+      card.innerHTML = `
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0" style="background:${s.color}">${s.icon}</div>
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full ${diffColors[s.difficulty]}">${diffLabel[s.difficulty]}</span>
+        </div>
+        <h3 class="font-semibold text-sm leading-snug mb-2 group-hover:text-primary transition-colors">${s.title}</h3>
+        <div class="flex items-center gap-3 text-xs text-gray-400 mb-4 flex-wrap">
+          <span>📋 ${s.questions} Questions</span>
+          <span>⏱ ${s.time}</span>
+          <span>🏷 ${s.category}</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div><div class="font-display font-extrabold text-lg text-primary">₹${s.earn.toFixed(2)}</div><div class="text-xs text-gray-400">per survey</div></div>
+          <button class="bg-primary-light text-primary text-xs font-semibold px-4 py-2 rounded-xl hover:bg-primary hover:text-white transition-all">Start Survey →</button>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  function filterSurveys(type, el) {
+    document.querySelectorAll('.filter-tab').forEach(t => {
+      t.classList.remove('active-tab','bg-primary','text-white','border-primary');
+      t.classList.add('text-gray-500','border-gray-300');
+    });
+    el.classList.add('active-tab','bg-primary','text-white','border-primary');
+    el.classList.remove('text-gray-500','border-gray-300');
+    let filtered = surveys;
+    if (type === 'quick') filtered = surveys.filter(s => parseInt(s.time) <= 5);
+    if (type === 'top') filtered = [...surveys].sort((a,b) => b.earn - a.earn).slice(0,6);
+    renderSurveys(filtered);
+  }
+
+  // ---- Survey Modal ----
+  function openSurveyModal(s) {
+    document.getElementById('modal-title').textContent = s.title;
+    document.getElementById('modal-meta').textContent = `${s.questions} Questions · ₹${s.earn.toFixed(2)} reward`;
+    const body = document.getElementById('modal-body');
+    let html = `<div class="space-y-6">`;
+    s.form.forEach((item, i) => {
+      html += `<div class="border border-gray-100 rounded-xl p-4 bg-gray-50">
+        <p class="font-semibold text-sm mb-3 text-gray-800">Q${i+1}. ${item.q}</p>
+        <div class="space-y-2">`;
+      item.options.forEach(opt => {
+        const uid = `q${s.id}_${i}_${opt.replace(/\W/g,'_')}`;
+        html += `<label class="flex items-center gap-3 cursor-pointer group">
+          <input type="radio" name="q${s.id}_${i}" value="${opt}" class="accent-[#1a6b3c] w-4 h-4 flex-shrink-0"/>
+          <span class="text-sm text-gray-600 group-hover:text-gray-900 transition-colors">${opt}</span>
+        </label>`;
+      });
+      html += `</div></div>`;
+    });
+    html += `</div>
+    <div class="mt-6 flex gap-3">
+      <button onclick="closeModal()" class="flex-1 border border-gray-300 text-gray-500 font-semibold py-3 rounded-xl text-sm hover:bg-gray-50 transition-colors">Cancel</button>
+      <button onclick="submitSurveyModal()" class="flex-1 bg-primary text-white font-bold py-3 rounded-xl text-sm hover:bg-[#0f4c2a] transition-colors">Submit & Earn ₹${s.earn.toFixed(2)} →</button>
+    </div>`;
+    body.innerHTML = html;
+    document.getElementById('surveyModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('surveyModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function submitSurveyModal() {
+    closeModal();
+    showSignup('survey');
+  }
+
+  // ---- FAQ ----
+  const faqs = [
+    {q:"Is Fill N Earn completely free to join?", a:"Yes! Registration is 100% free. We will never ask you to pay any membership fee or deposit."},
+    {q:"How do I receive my earnings?", a:"Your earnings are sent directly to your registered UPI ID (Google Pay, PhonePe, Paytm etc.) within 24–48 hours after withdrawal request."},
+    {q:"What is the minimum withdrawal amount?", a:"The minimum amount you can withdraw is ₹50. Once your balance reaches ₹50, the withdrawal option will be activated on your dashboard."},
+    {q:"How many surveys can I complete per day?", a:"There is no daily limit! You can complete as many surveys as are available and earn continuously. New surveys are added every 24 hours."},
+    {q:"What if I am not eligible for a survey?", a:"Some surveys have specific demographic requirements from our research clients. If you're screened out, don't worry — your eligibility for other surveys is not affected."},
+    {q:"How does the referral program work?", a:"Share your unique referral link with friends. When they sign up and complete their first survey, you earn a ₹5 bonus credited to your account instantly."},
+  ];
+
+  function renderFAQ() {
+    const container = document.getElementById('faqContainer');
+    faqs.forEach((item, i) => {
+      const el = document.createElement('div');
+      el.className = 'border border-gray-200 rounded-2xl overflow-hidden';
+      el.innerHTML = `
+        <button onclick="toggleFAQ(${i})" class="w-full text-left px-5 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors">
+          <span class="font-semibold text-sm pr-4">${item.q}</span>
+          <span class="text-gray-400 font-bold text-lg flex-shrink-0 faq-icon-${i}">+</span>
+        </button>
+        <div id="faq-body-${i}" class="hidden px-5 pb-4 text-sm text-gray-500 leading-relaxed">${item.a}</div>`;
+      container.appendChild(el);
+    });
+  }
+
+  function toggleFAQ(i) {
+    const body = document.getElementById(`faq-body-${i}`);
+    const icon = document.querySelector(`.faq-icon-${i}`);
+    const isOpen = !body.classList.contains('hidden');
+    body.classList.toggle('hidden');
+    icon.textContent = isOpen ? '+' : '−';
+  }
+
+  // ---- SPA Navigation ----
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo(0,0);
+  }
+
+  function showSignup(source) {
+    const sourceEl = document.getElementById('signupSource');
+    const labels = {
+      hero: '🚀 You clicked "Start Earning Today" — great choice!',
+      navbar: '👋 One step away from your first ₹1.50',
+      survey: '📋 Complete sign up to submit your survey and get paid!',
+      earnings: '💰 Join now to unlock all earning tiers!',
+    };
+    if (labels[source]) {
+      sourceEl.textContent = labels[source];
+      sourceEl.classList.remove('hidden');
+    }
+    showPage('page-signup');
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('field-name').value;
+    const email = document.getElementById('field-email').value;
+    document.getElementById('summary-name').textContent = name;
+    document.getElementById('summary-email').textContent = email;
+    showPage('page-thankyou');
+  }
+
+  // ---- Init ----
+  renderSurveys(surveys);
+  renderFAQ();
+</script>
+</body>
+</html>
